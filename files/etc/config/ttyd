@@ -1,0 +1,8 @@
+
+config ttyd
+	option command '/bin/login'
+	option ipv6 '1'
+	#option ssl '1'
+        #option ssl_cert '/etc/uhttpd.crt'
+        #option ssl_key '/etc/uhttpd.key'
+
