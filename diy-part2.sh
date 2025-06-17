@@ -11,10 +11,16 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-
-# Modify default theme
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/192.168.1.1/10.0.0.3/g' package/base-files/files/bin/config_generate
 
 # Modify hostname
-#sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+sed -i 's/LEDE/Pi5Plus/g' package/base-files/files/bin/config_generate
+
+# Modify Luci Login Page
+sed -i '23,25d' feeds/luci/themes/luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
+
+# Modify Luci Page
+sed -i '23,26d' feeds/luci/themes/luci-theme-argon/luasrc/view/themes/argon/footer.htm
+
+# Change ash to bash
+sed -i 's|/bin/ash$|/bin/bash|g' package/base-files/files/etc/passwd
