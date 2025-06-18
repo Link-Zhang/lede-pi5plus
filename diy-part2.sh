@@ -10,12 +10,6 @@
 # See /LICENSE for more information.
 #
 
-# Modify default IP
-sed -i 's/192.168.1.1/10.0.0.3/g' package/base-files/files/bin/config_generate
-
-# Modify hostname
-sed -i 's/LEDE/Pi5Plus/g' package/base-files/files/bin/config_generate
-
 # Modify Luci Login Page
 sed -i '23,25d' feeds/luci/themes/luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
 
