@@ -27,3 +27,6 @@ sed -i '23,26d' feeds/luci/themes/luci-theme-argon/luasrc/view/themes/argon/foot
 
 # Change ash to bash
 sed -i 's|/bin/ash$|/bin/bash|g' package/base-files/files/etc/passwd
+
+# Change kernel to 6.6
+sed -i 's|6.12|6.6|g' target/linux/rockchip/Makefile
