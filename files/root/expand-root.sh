@@ -8,7 +8,7 @@ ROOT_BLK="$(readlink -f /sys/dev/block/"$(awk -e \
 '$9=="/dev/root"{print $3}' /proc/self/mountinfo)")"
 ROOT_DISK="/dev/$(basename "${ROOT_BLK%/*}")"
 ROOT_PART="${ROOT_BLK##*[^0-9]}"
-parted -f -s "${ROOT_DISK}" \
+parted -s "${ROOT_DISK}" \
 resizepart "${ROOT_PART}" 100%
 mount_root done
 touch /etc/rootpt-resize
