@@ -38,4 +38,4 @@ sed -i 's|/services/|/system/|g' feeds/luci/applications/luci-app-ttyd/root/usr/
 sed -i 's|/services/|/nas/|g' feeds/luci/applications/luci-app-samba4/root/usr/share/luci/menu.d/luci-app-samba4.json
 
 # Change theme depends to remove luci-theme-bootstrap
-#sed -i 's|+luci-theme-bootstrap|+luci-theme-argon|g' feeds/luci/collections/luci-light/Makefile
+sed -i 's|+luci-theme-bootstrap|+luci-theme-argon|g' feeds/luci/collections/luci-light/Makefile
