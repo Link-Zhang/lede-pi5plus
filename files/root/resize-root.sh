@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 FDISK=$(which fdisk) || { echo "E: You must have fdisk" && exit 1; }
 LOSETUP=$(which losetup) || { echo "E: You must have losetup" && exit 1; }
