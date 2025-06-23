@@ -30,7 +30,7 @@ sed -i 's|/bin/ash$|/bin/bash|g' package/base-files/files/etc/passwd
 
 # Change kernel to 6.6
 sed -i 's|6.12|6.6|g' target/linux/rockchip/Makefile
-sed -i 's|6.6|6.6|g' target/linux/rockchip/Makefile
+#sed -i 's|6.6|6.6|g' target/linux/rockchip/Makefile
 
 # Change ttyd from services to system
 sed -i 's|/services/|/system/|g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
