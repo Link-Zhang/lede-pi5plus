@@ -1,7 +1,11 @@
 
 config dropbear
-	option PasswordAuth 'on'
+	option AllowTcpForwarding 'no'
+	option IdleTimeout '600'
+	option MaxAuthTries '3'
+	option PasswordAuth 'off'
 	option Port '22'
-	option RootPasswordAuth 'on'
-	option BannerFile '/etc/banner'
+	option RootPasswordAuth 'off'
+	option SFTP '1'
+	option X11Forwarding '0'
 

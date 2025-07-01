@@ -4,7 +4,7 @@ config turboacc 'global'
 
 config turboacc 'config'
 	option fastpath 'flow_offloading'
-	option fullcone '1'
 	option fastpath_fo_hw '1'
+	option fullcone '1'
 	option tcpcca 'bbr'
 

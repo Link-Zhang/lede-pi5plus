@@ -1,0 +1,23 @@
+
+[dropbear]
+bantime = 31536000
+enabled = true
+filter = dropbear
+findtime = 86400
+logpath = /tmp/log/system.log
+maxretry = 4
+maxtimeoffset = 600
+port = 22
+usedns = no
+
+[uhttpd]
+bantime = 31536000
+enabled = true
+filter = uhttpd
+findtime = 86400
+logpath = /tmp/log/system.log
+maxretry = 3
+maxtimeoffset = 600
+port = 443
+usedns = no
+

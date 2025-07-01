@@ -1,0 +1,19 @@
+
+config wifi-device 'radio0'
+	option band '5g'
+	option cell_density '0'
+	option channel '149'
+	option country 'CN'
+	option htmode 'HE80'
+	option path 'a40800000.pcie/pci0002:20/0002:20:00.0/0002:21:00.0'
+	option type 'mac80211'
+	option txpower '20'
+
+config wifi-iface 'default_radio0'
+	option device 'radio0'
+	option encryption 'psk2'
+	option key 'password'
+	option mode 'ap'
+	option network 'wlan'
+	option ssid 'Pi5Plus-5G'
+

@@ -1,0 +1,24 @@
+
+config system
+	option conloglevel '4'
+	option cronloglevel '8'
+	option hostname 'Pi5Plus'
+	option log_file '/tmp/log/system.log'
+	option log_proto 'udp'
+	option log_size '64'
+	option timezone 'CST-8'
+	option ttylogin '0'
+	option urandom_seed '0'
+	option zonename 'Asia/Shanghai'
+
+config timeserver 'ntp'
+	list server 'ntp1.aliyun.com'
+	list server 'ntp.tencent.com'
+	list server 'ntp.ntsc.ac.cn'
+	list server 'time.apple.com'
+
+config led
+	option name 'GREEN'
+	option sysfs 'green:indicator-2'
+	option trigger 'heartbeat'
+
